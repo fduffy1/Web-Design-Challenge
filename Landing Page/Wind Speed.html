@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Comparisons</title>
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <h1>Latitude</a>
+  <a href="#home">Comparison</a>
+  <a href="#news">Data</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Plots
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a target="_blank" href="file:///C:/Users/Frank/Documents/Data%20Analytics%202021/Homework/Web%20Homework/Landing%20Page/Cloudiness.html">
+      <img target="_blank" alt="Cloudiness">
+    <a target="_blank" href="file:///C:/Users/Frank/Documents/Data%20Analytics%202021/Homework/Web%20Homework/Landing%20Page/Humidity.html">
+      <img target="_blank" alt="Humidity">
+    <a target="_blank" href="file:///C:/Users/Frank/Documents/Data%20Analytics%202021/Homework/Web%20Homework/Landing%20Page/Wind%20Speed.html">
+      <img target="_blank" alt="Wind Speed">
+    <a target="_blank" href="file:///C:/Users/Frank/Documents/Data%20Analytics%202021/Homework/Web%20Homework/Landing%20Page/Max%20Temperature.html">
+      <img target="_blank" alt="Max Temp">
+   </div>
+  </div> 
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+<h1>Wind Speed</h1>
+
+<hr></hr>
+
+<div class="thumbnail">
+<img src="Fig4.png" alt="Wind Speed" width="100%">
+</div>
+
+<section>
+	<p>The City Latitude vs. Wind Speed shows us what the wind speed at different latitudes in the world. This graph is pretty consistent throughout. Most city wind speeds are low with a few cities having medium to high wind speeds. This is consistent at every latitude ppoint. </p>
+</section>
+
+
+<!-- CSS Link -->
+<link rel="stylesheet" type="text/css" href="style.css">

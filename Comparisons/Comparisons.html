@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Comparisons</title>     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS Link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <h1>Latitude</h1>
+  <a href="#home">Comparison</a>
+  <a href="#news">Data</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Plots
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a target="_blank" href="../Landing Page/Cloudiness.html">
+      <p>Cloudiness</p></a>
+    <a target="_blank" href="../Landing Page/Humidity.html">
+      <p>Humidity</p></a>
+    <a target="_blank" href="../Landing Page/Wind%20Speed.html">
+      <p>Wind Speed</p></a>
+    <a target="_blank" href="../Landing Page/Max%20Temperature.html">
+      <p>Max Temperature</p></a>
+   </div>
+  </div> 
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("frshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('frshow')) {
+      myDropdown.classList.remove('frshow');
+    }
+  }
+}
+</script>
+
+<h1>Comparison: Latitude vs. X</h1>
+
+<hr></hr>
+
+<section>
+	<p>Click any plot to get an in depth analysis. </p>
+</section>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <figcaption>Max Temperature</figcaption>
+        <img src="Fig1.png" style="width:100%">
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <figcaption>Humidity</figcaption>
+        <img src="Fig2.png" style="width:100%">
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+          <figcaption>Cloudiness</figcaption>
+          <img src="Fig3.png" style="width:100%">
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="thumbnail">
+          <figcaption>Wind Speed</figcaption>
+          <img src="Fig4.png" style="width:100%">
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
+</body>
+
+
+
+      
+
+
+
