@@ -1,69 +1,74 @@
 .navbar {
-    overflow: hidden;
-    background-color: rgb(17, 206, 206);
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .navbar a {
-    float: right;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: right;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: red;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute !important;
-    background-color: #f9f9f9 !important;
-    min-width: 160px !important;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1 !important;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: right;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .frshow {
-    display: block !important;
-  }
+  /* overflow: hidden; */
+  background-color: rgb(17, 206, 206);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.rightSideNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  /* float: right; */
+  /* overflow: hidden; */
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute !important;
+  background-color: #f9f9f9 !important;
+  min-width: 160px !important;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1 !important;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.frshow {
+  display: block !important;
+}
 
 figcaption {
-  background-color: rgb(17, 206, 206);
-  color: white;
-  font-style: italic;
-  padding: 2px;
-  text-align: center;
+background-color: rgb(17, 206, 206);
+color: white;
+font-style: italic;
+padding: 2px;
+text-align: center;
 }
