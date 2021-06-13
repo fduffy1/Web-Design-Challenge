@@ -8,42 +8,42 @@
 <body>
     
   <div class="navbar" style="width:75%">
-    <h1>Latitude</a>
-    <a href="#home">Comparison</a>
-    <a href="#news">Data</a>
+          <h1>Latitude</a>
+          <a href="#home">Comparison</a>
+          <a href="#news">Data</a>
     <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Plots
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content" id="myDropdown">
-      <a target="_blank" href="../Landing Page/Cloudiness.html">
-        <p>Cloudiness</p></a>
-      <a target="_blank" href="../Landing Page/Humidity.html">
-        <p>Humidity</p></a>
-      <a target="_blank" href="../Landing Page/Wind%20Speed.html">
-        <p>Wind Speed</p></a>
-      <a target="_blank" href="../Landing Page/Max%20Temperature.html">
-        <p>Max Temperature</p></a>
-     </div>
+          <button class="dropbtn" onclick="myFunction()">Plots
+          <i class="fa fa-caret-down"></i>
+          </button>
+      <div class="dropdown-content" id="myDropdown">
+          <a target="_blank" href="../Landing Page/Cloudiness.html">
+            <p>Cloudiness</p></a>
+          <a target="_blank" href="../Landing Page/Humidity.html">
+            <p>Humidity</p></a>
+          <a target="_blank" href="../Landing Page/Wind%20Speed.html">
+            <p>Wind Speed</p></a>
+          <a target="_blank" href="../Landing Page/Max%20Temperature.html">
+            <p>Max Temperature</p></a>
+      </div>
     </div> 
   </div>
 
     <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-    
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(e) {
-      if (!e.target.matches('.dropbtn')) {
-      var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
         }
       }
-    }
     </script>
 </body>
 </html>
@@ -64,16 +64,16 @@
  <!-- Side navigation -->
 <div class="sidenav">
 <h3 id="big-font" class="blue">Visualizations</h3>
-  <a target="_blank" href="THIS IS WHERE THE VISUALIZATION WILL GO">
+  <a target="_blank" href="../Landing Page/Max%20Temperature.html">
     <img target="_blank" src="Fig1.png" style="width: 200px;" alt="Max Temperature"></a>
   
-  <a target="_blank" href="THIS IS WHERE THE VISUALIZATION WILL GO">
+  <a target="_blank" href="../Landing Page/Humidity.html">
     <img target="_blank" img src="Fig2.png" style="width: 200px;" alt="Humidity Map"></a>
   
-  <a target="_blank" href="THIS IS WHERE THE VISUALIZATION WILL GO">
+  <a target="_blank" href="../Landing Page/Cloudiness.html">
     <img target="_blank" img src="Fig3.png" style="width: 200px;" alt="Cloudy Map"></a>
   
-  <a target="_blank" href="THIS IS WHERE THE VISUALIZATION WILL GO">
+  <a target="_blank" href="../Landing Page/Wind%20Speed.html">
     <img target="_blank" img src="Fig4.png" style="width:200px;" alt="Wind Map"></a>
 </div>
 
